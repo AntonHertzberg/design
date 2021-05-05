@@ -3,7 +3,13 @@ Title: Home
 Description: This is my index page.
 ---
 
-Home page
+Hem
 ==========================
 
-My name is Anton Hertzberg and I'm 21 years old. I'm from Staffanstorp and I like to play games in my spare time.
+Välkommen till min hemsida för designkursen på BTH.
+
+Jag hoppas att den blir väl gjord då det är jag som skapar den!
+
+![bild](%assets_url%/img/tired.jpg)
+
+Katten är väldigt trött

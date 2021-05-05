@@ -1,6 +1,6 @@
 ---
 Logo: image/tricatcozy.png
-Tagline: Me during winter
+Tagline: Antons portfolio
 Social:
     - title: Link till mitt github repo.
       url: https://github.com/AntonHertzberg/design
