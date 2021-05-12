@@ -1,32 +1,11 @@
 * {
     box-sizing: border-box;
-    border: 0 none;
     margin: 0;
     padding: 0;
 }
 
 *:focus {
     outline: 0;
-}
-
-.hidden {
-    display: none !important;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0 none;
-}
-
-.slide {
-    overflow-y: hidden !important;
-    transition: height 0.5s ease-in !important;
 }
 
 /*** BASIC LAYOUT ***/
@@ -38,6 +17,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #5fc0fc;
 }
 
 .main {
@@ -53,7 +33,7 @@ body {
 }
 
 .container {
-    max-width: 48em;
+    max-width: 55em;
     padding: 0 0.5em;
     margin: 0 auto;
 }
@@ -68,15 +48,17 @@ body {
     overflow-x: auto;
 }
 
+
 /*** BASIC LAYOUT: HEADER ***/
 
 .header {
-    background: #fff;
+    background: #0091d4;
 }
 
 .title, .logo {
     float: left;
-    padding: 3em 3em 3em 0;
+    padding: 3em 2em 3em 0;
+    margin-left: 2em;
 }
 
 .title * {
@@ -89,7 +71,7 @@ body {
 }
 
 .logo {
-    height: 10.8em;
+    height: 11.5em;
 }
 
 .logo * {
@@ -98,7 +80,7 @@ body {
 }
 
 .logo img {
-    min-width: 4.8em;
+    min-width: 5.5em;
 }
 
 .logo+.title h1 {
@@ -109,39 +91,12 @@ body {
     margin: 0;
 }
 
-.nav {
-    padding: 3em 0;
-    text-align: right;
-}
-
-.nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav ul li {
-    display: inline-block;
-    margin-left: 1em;
-    padding: 0;
-    font-weight: bold;
-}
-
 .nav a, .nav-toggle {
     color: #333;
 }
 
 .nav .active a, .nav a:hover, .nav-toggle:hover {
     color: #3b440d;
-}
-
-.nav a:hover, .nav-toggle:hover {
-    color: #3b440d;
-    text-decoration: underline;
-}
-
-.nav-toggle {
-    display: none;
 }
 
 /* IE8 + IE9 clearfix */
@@ -156,11 +111,21 @@ body {
     height: 100%;
 }
 
+/*** BASIC LAYOUT LINKS: MAIN ***/
+
+.main .container a {
+    color: #000;
+}
+
+.main .container a:hover {
+    color: #999;
+}
+
 /*** BASIC LAYOUT: FOOTER ***/
 
 .footer {
-    background: #707070;
-    color: #c0c0c0;
+    background: #0091d4;
+    color: #000;
 }
 
 .footer a {
@@ -168,7 +133,7 @@ body {
 }
 
 .footer a:hover {
-    color: #fff;
+    color: #999;
 }
 
 .footer p {
@@ -194,35 +159,7 @@ body {
     .logo {
         height: 8.8em;
     }
-    .nav {
-        clear: both;
-        padding: 0;
-    }
-    .nav ul {
-        padding-bottom: 1em;
-    }
-    .nav ul li {
-        display: block;
-        margin-left: 0;
-        text-align: center;
-    }
-    .nav ul li a {
-        display: block;
-        padding: 0.5em 0;
-    }
-    .js .nav-toggle {
-        display: block;
-        float: right;
-        width: 2em;
-        margin: 0.6667em 0;
-        font-size: 1.5rem;
-        line-height: 2em;
-        text-align: center;
-        cursor: pointer;
-    }
-    .js .nav-toggle>* {
-        vertical-align: middle;
-    }
+    
     .footer p {
         padding: 1em 0;
     }
